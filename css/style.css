@@ -1,7 +1,8 @@
 
 body {
     font-family: "Figtree", sans-serif;
-    background: linear-gradient(#81d0f1, #16bed1);
+    font-weight: 400;
+    background: #b8c4d6;
     margin: 0;
     padding: 40px 20px;
     max-width: 1200px;
@@ -12,61 +13,59 @@ body {
     flex-direction: column;
 }
 
-    h1, h2, h3 {
-    font-family: "Figtree", sans-serif;
-    font-weight: 400;
+header {
+    background: #ffafd3;
+    padding: 40px 50px;
+    text-align: center;
+}
+
+h1, h2, h3 {
     color: #021C1F;
+    font-weight: normal;
     text-align: center;
 }
 
 h1 {
-    font-family: "Figtree", sans-serif;
-    font-size: 30px;
-    text-align: center;
+    font-size: 40px;
     margin-bottom: 10px;
-    text-align: center;
     font-weight: bold;
 }
 
 h2 {
-    font-family: "Figtree", sans-serif;
-    font-size: medium;
-    font-weight: 800;
-    text-align: center;
-    margin-top: 5px;
-    font-weight: bold;
+    font-size: 30px;
+    margin-top: 2px;
 }
 
 h3 {
-    font-family: "Figtree", sans-serif;
     font-size: 20px;
-    text-align: left;
     display: inline-block;
     margin-bottom: 15px;
     font-weight: bold;
 }
 
 p {
-  font-family: "Figtree", sans-serif;
-  font-weight: 400;
-  margin: 10px 0;
+    margin: 10px 0;
 }
+
+span {
+    font-weight: 600;
+}
+
 
 figure {
     text-align: center;
     margin: 30px auto;
     padding: 20px;
     background-color: #f9dddd;
-    max-width: 600px;
+    max-width: 700px;
     display: block;
-
 }
 
 figcaption {
     font-size: small;
     font-style: italic;
-    text-align: center;
     line-height: 1.4;
+    margin-top: 10px;
 }
 
 
@@ -77,6 +76,8 @@ figcaption {
     margin: 20px 0;
 }
 
+
+
 .ingredients-section {
     grid-column: 1;
     display: flex;
@@ -84,10 +85,11 @@ figcaption {
     gap: 20px;
 }
 
-.ingredients-section > div {
-    grid-column: 1;
-}
+.ingredients-section h3 {
+    font-size: bold;
+    text-align: center;
 
+}
 
 ul {
     line-height: 1.5;
@@ -95,16 +97,19 @@ ul {
     padding: 40px;
     width: 300px;
     border-radius: 8px;
-    text-align: left;
-    
 }
 
+ol {
+    background-color: #f9dddd;
+    padding: 25px 40px 25px 60px;
+    max-width: 700px;
+    border-radius: 8px;
+}
 
 li {
-    margin-bottom: 10px;
-    position: relative;
     margin-bottom: 12px;
 }
+
 
 .forms-section {
     display: grid;
@@ -123,39 +128,29 @@ li {
     border-radius: 8px;
 }
 
+
 .radio-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: #f9dddd;
 }
 
 fieldset {
-    text-align: left;
     margin: 10px 0;
-
 }
-ol {
-    background: #f9dddd;
-    padding: 25px 40px 25px 60px;
-    text-align: left;
-    max-width: 700px;
 
-}
 input {
     padding: 10px;
     font-family: "Figtree", sans-serif;
     font-size: 16px;
     margin: 5px;
 }
-hr {
 
+
+hr {
     border: none;
     height: 5px;
     background: linear-gradient(to right, #d3487217, #6e99dd, #d3487217);
     margin: 30px;
-
 }
-span {
-    font-weight: 600;
-}
-
